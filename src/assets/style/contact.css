@@ -1,0 +1,130 @@
+.contact-us-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+    /* text-align: center; */
+    padding: 50px 0;
+    background-image: url(../images/Texture_12_003-1-copy.jpg);
+    background-size: cover;
+  }
+  
+  .contact-us-section h2 {
+    font-size: 64px;
+    margin-bottom: 20px;
+  }
+  .contactText{
+    width: 600px;
+    color: white;
+    font-size: 19px;
+    padding-bottom: 50px;
+  }
+  .contact-us-button {
+    padding: 20px 30px;
+    font-size: 19px;
+    background-color: rgb(168, 166, 161);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-us-button:hover {
+    background-color: rgba(168, 166, 161, 0.554);
+  }
+  
+  /* Modal styles */
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  .modal h2{
+    color: black;
+    font-size: 35px;
+  }
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 700px; 
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal form {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .modal form span{
+    font-size: 19px;
+  }
+  .modal .contact-names{
+    margin-top: 20px;
+    display: flex;
+
+  }
+  .modal form label {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  .modal #name{
+    width: 325px;
+  }
+  .modal .label{
+
+    font-size: 21px;
+  }
+  .modal h3{
+    font-size: 30px;
+    text-align: center;
+    color: black;
+  }
+  .modal form input,
+  .modal form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+  
+  .modal form button {
+    padding: 20px 33px;
+    font-size: 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .modal form button:hover {
+    background-color: #555;
+  }
+  
