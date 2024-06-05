@@ -18,7 +18,7 @@ import { Navigation } from 'swiper/modules';
 const ProductPage = () => {
   const { productId } = useParams();
   const product = ShopDb.find(item => item.id === parseInt(productId));
-  const [selectedSize, setSelectedSize] = useState(product.sizes[0]);
+  const [selectedSize, setSelectedSize] = useState(product?.sizes[0]);
   const [price, setPrice] = useState(product.price);
   const { addToCart } = useCart();
   const navigate = useNavigate();
@@ -62,7 +62,7 @@ const ProductPage = () => {
           <div className="product-sizes">
             <h3>Size:</h3>
             <ul>
-              {product.sizes.map((size, index) => (
+              {product?.sizes.map((size, index) => (
                 <li 
                   key={index} 
                   onClick={() => handleSizeClick(size)}
