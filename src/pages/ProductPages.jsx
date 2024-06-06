@@ -19,7 +19,7 @@ const ProductPage = () => {
   const { productId } = useParams();
   const product = ShopDb.find(item => item.id === parseInt(productId));
   const [selectedSize, setSelectedSize] = useState(product?.sizes[0]);
-  const [price, setPrice] = useState(product.price);
+  const [price, setPrice] = useState(product?.price);
   const { addToCart } = useCart();
   const navigate = useNavigate();
 

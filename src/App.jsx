@@ -36,7 +36,7 @@ function App() {
     <CartProvider>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/Crosby-vite/" element={<Home />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/our-story" element={<OurStory />} />
         <Route path="/journal" element={<Journal />} />

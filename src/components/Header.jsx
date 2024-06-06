@@ -175,7 +175,7 @@ const Header = () => {
     <header className={`header ${showHeader ? 'show' : 'hide'} ${isTop ? 'top' : ''}`}>
       <div className="container header-container">
         <div className="logo">
-          <Link to="/">Crosby</Link>
+          <Link to="/Crosby-vite/">Crosby</Link>
         </div>
         <nav className='nav'>
           <ul className='nav-list'>
